@@ -28,11 +28,10 @@ def main():
     clean()
 
     main_data = load_or_die('src', 'main.yaml')
-    pages = main_data['Pages']
 
-    template_data = TemplateData({'pages': pages}, '', [])
+    template_data = TemplateData(main_data, '', [])
 
-    for page in pages:
+    for page in main_data['Pages']:
         template = load_or_die('templates', page['template'])
         write(template_data, page['Title'], evaluate_template(template, template_data), 'rendered', page['URL'])
 

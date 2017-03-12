@@ -28,7 +28,7 @@ body {
 }
 
 #header a.selected {
-    border-bottom: 4px solid;
+    background-color: #444;
 }
 
 .page {
