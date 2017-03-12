@@ -1,0 +1,16 @@
+Pages:
+  - Title: Home
+    URL: index.html
+    template: index.htmpl
+  - Title: Software
+    URL: software.html
+    template: software.htmpl
+  - Title: Music
+    URL: music.html
+    template: music.htmpl
+  - Title: Rentals
+    URL: rentals.html
+    template: rentals.htmpl
+  - Title: Résumé
+    URL: resume.html
+    template: resume.htmpl

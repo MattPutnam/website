@@ -1,0 +1,17 @@
+<!-- This is an auto-generated file -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Matt Putnam's personal website" />
+    <link type="text/css" href="{{static_resource:file=style/main.css}}" rel="stylesheet" />
+</head>
+<body>
+<div id="header">{{foreach:source=$pages, var=page}}
+    <a href="{{$page->URL}}">{{$page->Title}}</a>{{end}}
+</div>
+<div class="page">
+    {{$local->content}}
+</div>
+</body>
+</html>
