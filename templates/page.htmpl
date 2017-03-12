@@ -10,7 +10,7 @@
 <body>
 <div id="header">
     <div id="header_contents">{{foreach:source=$pages, var=page}}
-        <a href="{{$page->URL}}">{{$page->Title}}</a>{{end}}
+        <a class="{{if:condition=eval('$page->Title' == '$local->title')}}selected{{else}}unselected{{end}}" href="{{$page->URL}}">{{$page->Title}}</a>{{end}}
     </div>
 </div>
 <div class="page">
